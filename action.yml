@@ -1,0 +1,15 @@
+name: Versioner
+
+inputs:
+  github_info:
+    required: true
+  gist_token:
+    required: true
+
+outputs:
+  version:
+    description: generated version
+
+runs:
+  using: 'node12'
+  main: 'app.js'
